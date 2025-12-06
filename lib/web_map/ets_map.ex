@@ -30,7 +30,7 @@ defmodule WebMap.EtsMap do
   end
 
   defp get_map_from_no([]) do
-    nil
+    %{}
   end
 
   def delte(id) do

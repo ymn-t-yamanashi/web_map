@@ -18,6 +18,10 @@ defmodule WebMapWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    get "/insert", MapController, :insert
+    get "/get", MapController, :get
+    get "/delete", MapController, :delete
   end
 
   # Other scopes may use custom stacks.
